@@ -218,7 +218,7 @@ details[open] summary::after {
         flex-direction: column; /* Foto ID Card akan ada di atas konten */
     }
 
-    /* Membuat ID Card selebar layar HP */ss
+    /* Membuat ID Card selebar layar HP */
     .right-sidebar {
         width: 100%;
         position: relative; /* Menghapus efek sticky agar bisa di-scroll */
