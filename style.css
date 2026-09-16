@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+/* Pengaturan Dasar */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #8ac2d8;
+    background-image: radial-gradient(#000 1.5px, transparent 1.5px);
+    background-size: 25px 25px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Layout Desktop */
+.main-container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Navigasi Atas */
+.nav-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    flex: 1;
+    min-width: 150px;
+    background-color: #f0f064;
+    color: #0a0a0a;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border: 3px solid #000;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px #000;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.nav-btn:active {
+    transform: translate(4px, 4px) !important;
+    box-shadow: 0px 0px 0px #000 !important;
+    margin-bottom: -4px;
+}
+
+/* Warna kuning untuk halaman yang sedang aktif dibuka */
+.nav-btn.active {
+    background-color: #fae104;
+}
+
+/* Area Konten Bawah (Kiri Konten, Kanan ID Card) */
+.content-area {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.left-content {
+    flex: 1; /* Mengambil sisa ruang di kiri */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-sidebar {
+    width: 320px; /* Lebar tetap untuk Kartu ID di kanan */
+    position: sticky;
+    top: 20px;
+}
+
+/* Desain Kotak Kartu */
+.card {
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 6px 6px 0px #000000;
+}
+
+h1 { font-size: 32px; font-weight: 800; margin-top: 0; margin-bottom: 15px;}
+.text-highlight {
+    color: #f7f3da;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+/* Tombol Aksi */
+.btn-action {
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #ffee05;
+    border: 3px solid #000;
+    border-radius: 12px;
+    box-shadow: 4px 4px 0px #000;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.btn-action:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px #000;
+}
+/* Grid untuk Keahlian Utama (2 Kolom) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.skill-card {
+    border: 3px solid #000;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 4px 4px 0px #000;
+}
+
+/* Warna khusus untuk tiap kartu keahlian */
+.skill-card.c-blue { background-color: #aee6e6; }
+.skill-card.c-yellow { background-color: #ffde00; }
+.skill-card.c-green { background-color: #b5e6a1; }
+.skill-card.c-purple { background-color: #d493ff; }
+.skill-card.c-pink { background-color: #ffb6c1; }
+
+.skill-card h3 {
+    margin-top: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Label / Tag Kecil di dalam Keahlian */
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.tag {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Desain Accordion (Katalog Perangkat) */
+.accordion {
+    margin-top: 15px;
+}
+details {
+    border: 3px solid #000;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 4px 4px 0px #000;
+    overflow: hidden;
+}
+
+/* Warna Accordion */
+details.a-blue { background-color: #aee6e6; }
+details.a-yellow { background-color: #ffde00; }
+details.a-pink { background-color: #ffb6c1; }
+details.a-purple { background-color: #e0b0ff; }
+
+summary {
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none; /* Menghilangkan panah default */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::after {
+    content: '+';
+    font-size: 20px;
+    font-weight: bold;
+}
+details[open] summary::after {
+    content: '-';
+}
+.accordion-content {
+    padding: 0 15px 15px 15px;
+    font-size: 14px;
+    background-color: #fff;
+    border-top: 2px solid #000; /* Garis batas antara judul dan isi */
+}
+.accordion-content ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+}

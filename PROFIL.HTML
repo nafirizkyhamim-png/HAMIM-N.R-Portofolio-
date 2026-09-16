@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Hamim Nafi Rizky - Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Desain khusus untuk barisan tombol di halaman profil */
+        .social-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap; /* Agar rapi jika dibuka di layar kecil */
+        }
+        
+        .social-btn {
+            flex: 1; /* Membuat tombol berbagi ruang secara rata */
+            min-width: 120px; /* Lebar minimum tombol */
+            padding: 12px;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            border: 3px solid #000;
+            border-radius: 8px;
+            box-shadow: 4px 4px 0px #000;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px; /* Jarak antara ikon dan teks */
+        }
+
+        .social-btn:active {
+            transform: translate(4px, 4px);
+            box-shadow: 0px 0px 0px #000;
+            margin-bottom: -4px;
+        }
+
+        /* Warna masing-masing tombol */
+        .btn-email { background-color: #ffde00; }
+        .btn-wa { background-color: #aee6e6; }
+        .btn-github { background-color: #ffb6c1; }
+        .btn-linkedin { background-color: #b5e6a1; }
+        .btn-ig { background-color: #e0b0ff; }
+        
+        /* Ikon emoji diperbesar sedikit */
+        .social-btn span {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <!-- NAVIGASI ATAS -->
+        <div class="nav-bar">
+            <a href="index.html" class="nav-btn">🏠 BERANDA</a>
+            <!-- Class active ada di sini -->
+            <a href="profil.html" class="nav-btn active">👤 PROFIL & KONTAK</a>
+            <a href="keahlian.html" class="nav-btn">🛠️ KEAHLIAN & KATALOG</a>
+            <a href="pengalaman.html" class="nav-btn">💼 PENGALAMAN</a>
+            <a href="proyek.html" class="nav-btn">📁 PROYEK</a>
+        </div>
+
+        <!-- KONTEN BAWAH -->
+        <div class="content-area">
+            
+            <!-- KIRI: KONTEN PROFIL -->
+            <div class="left-content">
+                
+                <div class="card" style="background-color: #ffde00;">
+                    <p style="font-size: 12px; border: 2px solid #000; border-radius: 20px; display: inline-block; padding: 5px 15px; background: #fff; margin-bottom: 10px;">🟢 AVAILABLE FOR WORK & COLLAB</p>
+                    <h2 style="margin: 0; font-size: 24px;">HAMIM NAFI RIZKY</h2>
+                    <div style="background: #fff; border: 2px solid #000; padding: 10px; border-radius: 8px; margin-top: 15px; font-weight: bold;">
+                        ⚡ TKJ Specialist & Tech Enthusiast
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span style="background-color: #000; color: #fff; padding: 4px 10px; border-radius: 6px; font-weight: bold;">01</span>
+                    <h2 style="margin-top: 10px;">TENTANG SAYA</h2>
+                    <p>Saya adalah seorang penggiat di bidang Teknik Komputer dan Jaringan yang sangat antusias terhadap teknologi. Saya senang memecahkan masalah teknis (troubleshooting) dan terus mengeksplorasi pengelolaan sistem jaringan, perangkat keras, hingga keamanan data.</p>
+                </div>
+
+                <!-- BAGIAN MARI TERHUBUNG (Kontak & Sosial Media) -->
+                <div class="card">
+                    <span style="background-color: #000; color: #fff; padding: 4px 10px; border-radius: 6px; font-weight: bold;">02</span>
+                    <h2 style="margin-top: 10px;">MARI TERHUBUNG</h2>
+                    <p style="margin-bottom: 20px;">Punya proyek menarik atau pertanyaan teknis? Jangan ragu untuk menghubungi saya melalui kontak di bawah ini.</p>
+                    
+                    <div class="social-links">
+                        <!-- Link Email (Gunakan 'mailto:') -->
+                        <a href="mailto:nafirizkyhamim@gmail.com" class="social-btn btn-email">
+                            <span>✉️</span> KIRIM EMAIL
+                        </a>
+                        
+                        <!-- Link WhatsApp (Gunakan 'wa.me/') -->
+                        <a href="https://wa.me/6287852067347" target="_blank" class="social-btn btn-wa">
+                            <span>💬</span> CHAT WHATSAPP
+                        </a>
+                        
+                        <!-- Link GitHub -->
+                        <a href="https://github.com/nafirizkyhamim-png" target="_blank" class="social-btn btn-github">
+                            <span>🐙</span> GITHUB
+                        </a>
+                        
+                        <!-- Link Instagram -->
+                        <a href="https://www.instagram.com/mimnaf" target="_blank" class="social-btn btn-ig">
+                            <span>📸</span> INSTAGRAM
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- KANAN: KARTU ID -->
+            <div class="right-sidebar">
+                <div class="card" style="text-align: center; background-color: #e0f7fa;">
+                    <div style="border: 2px solid #000; background-color: #fff; display: inline-block; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 12px; margin-bottom: 15px;">★ ID PASS // VERIFIED</div>
+                    <!-- Pastikan nama file foto sudah disesuaikan -->
+                    <img src="foto-profil.jpeg" alt="Foto Profil" style="width: 100%; height: 250px; object-fit: cover; border: 3px solid #000; border-radius: 8px; margin-bottom: 15px; background-color: #ccc;">
+                    <h2 style="margin: 0;">HAMIM N. R.</h2>
+                    <p style="margin: 5px 0 15px 0; font-size: 14px; font-weight: bold;">TKJ SPECIALIST</p>
+                    <div style="border-top: 2px dashed #000; padding-top: 15px; font-size: 12px; font-weight: bold;">PASSPORT #2026-TKJ <br> |||| ||| |||||</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
