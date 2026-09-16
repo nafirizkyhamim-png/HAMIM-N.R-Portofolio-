@@ -207,3 +207,50 @@ details[open] summary::after {
     margin: 10px 0 0 0;
     padding-left: 20px;
 }
+
+/* =========================================
+   MEDIA QUERY UNTUK TAMPILAN HP (MOBILE)
+   ========================================= */
+@media (max-width: 768px) {
+    
+    /* Mengubah arah konten dari bersampingan (kiri-kanan) menjadi atas-bawah */
+    .content-area {
+        flex-direction: column-reverse; /* Foto ID Card akan ada di atas konten */
+    }
+
+    /* Membuat ID Card selebar layar HP */
+    .right-sidebar {
+        width: 100%;
+        position: relative; /* Menghapus efek sticky agar bisa di-scroll */
+        top: 0;
+    }
+
+    /* Membuat Navigasi tombolnya bertumpuk 2-2 atau menyesuaikan */
+    .nav-btn {
+        flex: 1 1 45%; /* Tombol navigasi akan membagi ruang 2 kolom di HP */
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    /* Grid Keahlian dan Pengalaman menjadi 1 kolom (atas-bawah) */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Mengurangi ukuran jarak dan padding agar pas di layar HP */
+    body {
+        padding: 10px;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .text-highlight {
+        font-size: 28px;
+    }
+}
