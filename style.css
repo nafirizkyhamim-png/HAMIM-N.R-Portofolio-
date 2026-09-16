@@ -215,10 +215,10 @@ details[open] summary::after {
     
     /* Mengubah arah konten dari bersampingan (kiri-kanan) menjadi atas-bawah */
     .content-area {
-        flex-direction: column-reverse; /* Foto ID Card akan ada di atas konten */
+        flex-direction: column; /* Foto ID Card akan ada di atas konten */
     }
 
-    /* Membuat ID Card selebar layar HP */
+    /* Membuat ID Card selebar layar HP */ss
     .right-sidebar {
         width: 100%;
         position: relative; /* Menghapus efek sticky agar bisa di-scroll */
